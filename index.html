@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foxchase — A Place to Call Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAVIGATION ─────────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Fox silhouette simplified -->
+          <path d="M4 28 C4 28 6 14 14 10 L8 4 L16 10 C17.3 9.7 18.7 9.7 20 10 L28 4 L22 10 C30 14 32 28 32 28" fill="currentColor" opacity="0.15"/>
+          <path d="M18 10 C12 10 7 16 7 22 C7 26 10 29 14 30 L18 32 L22 30 C26 29 29 26 29 22 C29 16 24 10 18 10Z" fill="currentColor"/>
+          <circle cx="14" cy="21" r="1.5" fill="#f8f5f0"/>
+          <circle cx="22" cy="21" r="1.5" fill="#f8f5f0"/>
+          <path d="M15 25 Q18 27 21 25" stroke="#f8f5f0" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="logo-text">Foxchase</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#announcements">News</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#portal" class="btn btn-ghost">Resident Login</a>
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+      </div>
+      <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── HERO ──────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-shape hero-shape--1"></div>
+      <div class="hero-shape hero-shape--2"></div>
+      <div class="hero-shape hero-shape--3"></div>
+      <!-- Decorative tree line SVG -->
+      <svg class="hero-trees" viewBox="0 0 1440 220" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0 220 L0 160 Q60 100 90 130 Q110 80 130 110 Q155 55 175 90 Q200 40 220 75 Q250 20 270 60 Q295 10 315 50 Q340 0 365 45 Q390 15 410 55 Q440 5 460 50 Q490 25 510 60 Q535 35 555 65 Q580 15 605 55 Q630 25 655 60 Q680 5 705 45 Q730 20 755 55 Q780 0 805 40 Q830 20 855 55 Q880 5 905 45 Q935 15 960 50 Q985 30 1010 60 Q1035 10 1060 50 Q1085 25 1110 55 Q1135 5 1165 45 Q1195 20 1220 55 Q1250 10 1280 50 Q1310 25 1335 60 Q1365 15 1400 55 L1440 60 L1440 220 Z" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 12 12" fill="currentColor" width="10" height="10"><circle cx="6" cy="6" r="6"/></svg>
+        Established 1987 · Fredericksburg, VA
+      </div>
+      <h1 class="hero-title">
+        Where<br/>
+        <em>community</em><br/>
+        takes root.
+      </h1>
+      <p class="hero-sub">
+        Foxchase is a welcoming neighborhood nestled among mature trees and winding paths — a place where neighbors become friends and every season brings something to celebrate.
+      </p>
+      <div class="hero-ctas">
+        <a href="#community" class="btn btn-primary btn-lg">Explore the Neighborhood</a>
+        <a href="#contact" class="btn btn-outline btn-lg">Contact the HOA</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">340+</span>
+          <span class="stat-label">Homes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">37</span>
+          <span class="stat-label">Acres of Green Space</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Annual Events</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ANNOUNCEMENTS ─────────────────────────────────────────── -->
+  <section class="section announcements" id="announcements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Latest News</span>
+        <h2 class="section-title">Neighborhood Announcements</h2>
+        <p class="section-sub">Stay up to date with what's happening in Foxchase.</p>
+      </div>
+      <div class="announce-grid">
+        <article class="announce-card announce-card--featured">
+          <div class="announce-meta">
+            <span class="announce-category announce-category--alert">Important</span>
+            <time class="announce-date">March 15, 2026</time>
+          </div>
+          <h3 class="announce-title">Spring Pool Opening — May 24th</h3>
+          <p class="announce-body">The Foxchase pool will open for the season on Saturday, May 24th. Pool passes are available through the resident portal. All guests must be accompanied by a resident. Hours will be 10 AM – 9 PM daily.</p>
+          <a href="#" class="announce-link">Read more →</a>
+        </article>
+        <article class="announce-card">
+          <div class="announce-meta">
+            <span class="announce-category announce-category--info">HOA</span>
+            <time class="announce-date">March 10, 2026</time>
+          </div>
+          <h3 class="announce-title">Annual Meeting — April 8th at 7 PM</h3>
+          <p class="announce-body">All residents are encouraged to attend the annual HOA meeting at the clubhouse. Board election results and the 2026 budget will be presented.</p>
+          <a href="#" class="announce-link">Read more →</a>
+        </article>
+        <article class="announce-card">
+          <div class="announce-meta">
+            <span class="announce-category announce-category--green">Green Space</span>
+            <time class="announce-date">March 5, 2026</time>
+          </div>
+          <h3 class="announce-title">Trail Maintenance — Section C Closed Briefly</h3>
+          <p class="announce-body">The north trail section near Foxchase Drive will be closed March 20–22 for drainage improvements. The main trail loop remains open throughout.</p>
+          <a href="#" class="announce-link">Read more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── AMENITIES ─────────────────────────────────────────────── -->
+  <section class="section amenities-section" id="amenities">
+    <div class="amenities-bg-shape" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Life in Foxchase</h2>
+        <p class="section-sub">From quiet mornings on the trail to summer evenings at the pool, there's always something to enjoy right outside your door.</p>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 C3 17 5 11 12 11 C19 11 21 17 21 17"/><path d="M12 11 L12 3"/><path d="M9 6 L12 3 L15 6"/><rect x="8" y="17" width="8" height="4" rx="1"/></svg>
+          </div>
+          <h3 class="amenity-name">Community Pool</h3>
+          <p class="amenity-desc">Olympic-sized pool with a separate wading area for young ones. Open Memorial Day through Labor Day.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12 C5 8 8 5 12 5 C16 5 19 8 21 12"/><path d="M3 12 C5 16 8 19 12 19 C16 19 19 16 21 12"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="amenity-name">Nature Trails</h3>
+          <p class="amenity-desc">Over 4 miles of maintained walking and jogging trails winding through mature hardwood forest.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="18" height="11" rx="1"/><path d="M12 3 L3 10 L21 10 Z"/><rect x="9" y="15" width="6" height="6"/></svg>
+          </div>
+          <h3 class="amenity-name">Clubhouse</h3>
+          <p class="amenity-desc">Fully equipped community clubhouse available for private event rentals by Foxchase residents.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20 C4 16 7.6 13 12 13 C16.4 13 20 16 20 20"/><path d="M16 6 C17 5 18.5 5 19.5 6"/><path d="M4.5 6 C5.5 5 7 5 8 6"/></svg>
+          </div>
+          <h3 class="amenity-name">Active Community</h3>
+          <p class="amenity-desc">Neighborhood watch, social committees, and a vibrant mix of families, retirees, and young professionals.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7 V5 A4 4 0 0 0 8 5 V7"/><path d="M12 13 V16"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3 class="amenity-name">Gated Entrances</h3>
+          <p class="amenity-desc">Secured entry points with access management, adding peace of mind for all residents.</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22 C12 22 4 16 4 9 A8 8 0 0 1 20 9 C20 16 12 22 12 22Z"/><circle cx="12" cy="9" r="3"/></svg>
+          </div>
+          <h3 class="amenity-name">Prime Location</h3>
+          <p class="amenity-desc">Minutes from I-95, top-rated schools, shopping, and dining — all while feeling miles away from it all.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EVENTS ─────────────────────────────────────────────────── -->
+  <section class="section events-section" id="events">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Mark Your Calendar</span>
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-sub">From seasonal block parties to community clean-up days, there's always a reason to get together.</p>
+      </div>
+      <div class="events-list">
+        <div class="event-item">
+          <div class="event-date-block">
+            <span class="event-month">APR</span>
+            <span class="event-day">8</span>
+          </div>
+          <div class="event-details">
+            <h3 class="event-name">Annual HOA Meeting</h3>
+            <p class="event-info">
+              <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><path d="M8 1.5A6.5 6.5 0 1 0 14.5 8 6.508 6.508 0 0 0 8 1.5ZM8 13a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Zm.5-8.25v3l2.25 1.35-.75 1.2-2.75-1.65V4.75Z"/></svg>
+              7:00 PM · Foxchase Clubhouse
+            </p>
+          </div>
+          <a href="#" class="event-rsvp">RSVP</a>
+        </div>
+        <div class="event-item">
+          <div class="event-date-block">
+            <span class="event-month">APR</span>
+            <span class="event-day">19</span>
+          </div>
+          <div class="event-details">
+            <h3 class="event-name">Earth Day Trail Clean-Up</h3>
+            <p class="event-info">
+              <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><path d="M8 1.5A6.5 6.5 0 1 0 14.5 8 6.508 6.508 0 0 0 8 1.5ZM8 13a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Zm.5-8.25v3l2.25 1.35-.75 1.2-2.75-1.65V4.75Z"/></svg>
+              9:00 AM · North Trail Head
+            </p>
+          </div>
+          <a href="#" class="event-rsvp">RSVP</a>
+        </div>
+        <div class="event-item">
+          <div class="event-date-block event-date-block--gold">
+            <span class="event-month">MAY</span>
+            <span class="event-day">24</span>
+          </div>
+          <div class="event-details">
+            <h3 class="event-name">Pool Opening Day 🎉</h3>
+            <p class="event-info">
+              <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><path d="M8 1.5A6.5 6.5 0 1 0 14.5 8 6.508 6.508 0 0 0 8 1.5ZM8 13a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Zm.5-8.25v3l2.25 1.35-.75 1.2-2.75-1.65V4.75Z"/></svg>
+              10:00 AM · Community Pool
+            </p>
+          </div>
+          <a href="#" class="event-rsvp">RSVP</a>
+        </div>
+        <div class="event-item">
+          <div class="event-date-block">
+            <span class="event-month">JUN</span>
+            <span class="event-day">14</span>
+          </div>
+          <div class="event-details">
+            <h3 class="event-name">Summer Block Party</h3>
+            <p class="event-info">
+              <svg viewBox="0 0 16 16" fill="currentColor" width="13" height="13"><path d="M8 1.5A6.5 6.5 0 1 0 14.5 8 6.508 6.508 0 0 0 8 1.5ZM8 13a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Zm.5-8.25v3l2.25 1.35-.75 1.2-2.75-1.65V4.75Z"/></svg>
+              4:00 PM · Foxchase Drive Cul-de-sac
+            </p>
+          </div>
+          <a href="#" class="event-rsvp">RSVP</a>
+        </div>
+      </div>
+      <div class="events-footer">
+        <a href="#" class="btn btn-outline">View Full Calendar →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── COMMUNITY SPOTLIGHT ────────────────────────────────────── -->
+  <section class="section community-section" id="community">
+    <div class="container">
+      <div class="community-split">
+        <div class="community-visual" aria-hidden="true">
+          <div class="visual-card visual-card--main">
+            <div class="visual-scene">
+              <!-- Illustrated neighborhood scene via CSS/SVG -->
+              <svg viewBox="0 0 400 260" xmlns="http://www.w3.org/2000/svg">
+                <!-- Sky -->
+                <rect width="400" height="260" fill="#d4e8d0" rx="16"/>
+                <!-- Sun -->
+                <circle cx="340" cy="55" r="30" fill="#f0c040" opacity="0.5"/>
+                <!-- Far trees -->
+                <ellipse cx="50" cy="130" rx="30" ry="45" fill="#2d6a4f" opacity="0.4"/>
+                <ellipse cx="85" cy="120" rx="25" ry="50" fill="#2d6a4f" opacity="0.5"/>
+                <ellipse cx="355" cy="125" rx="28" ry="42" fill="#2d6a4f" opacity="0.4"/>
+                <ellipse cx="325" cy="118" rx="22" ry="48" fill="#2d6a4f" opacity="0.5"/>
+                <!-- Ground -->
+                <ellipse cx="200" cy="240" rx="220" ry="40" fill="#3a7d44" opacity="0.2"/>
+                <!-- House 1 -->
+                <rect x="100" y="160" width="80" height="60" rx="2" fill="#f8f5f0"/>
+                <polygon points="90,160 190,160 140,115" fill="#7a4f3a"/>
+                <rect x="125" y="185" width="18" height="25" rx="1" fill="#5a8a52" opacity="0.7"/>
+                <rect x="150" y="178" width="14" height="14" rx="1" fill="#a8d5b5" opacity="0.8"/>
+                <!-- House 2 -->
+                <rect x="220" y="165" width="70" height="55" rx="2" fill="#ede9e0"/>
+                <polygon points="212,165 298,165 255,122" fill="#3a2e28"/>
+                <rect x="243" y="188" width="16" height="22" rx="1" fill="#5a8a52" opacity="0.7"/>
+                <rect x="224" y="180" width="12" height="12" rx="1" fill="#a8d5b5" opacity="0.8"/>
+                <!-- Path -->
+                <path d="M140 220 Q200 215 255 220 Q260 240 255 260 L140 260 Z" fill="#c8b89a" opacity="0.4"/>
+                <!-- Foreground tree -->
+                <rect x="195" y="155" width="10" height="65" rx="3" fill="#5a3e28"/>
+                <ellipse cx="200" cy="148" rx="22" ry="30" fill="#2d6a4f"/>
+                <ellipse cx="200" cy="140" rx="16" ry="22" fill="#3a7d44"/>
+                <!-- Flowers -->
+                <circle cx="108" cy="222" r="5" fill="#e8a87c" opacity="0.7"/>
+                <circle cx="118" cy="219" r="4" fill="#f4c2a1" opacity="0.7"/>
+                <circle cx="280" cy="221" r="5" fill="#e8a87c" opacity="0.7"/>
+                <circle cx="291" cy="218" r="4" fill="#f4c2a1" opacity="0.7"/>
+              </svg>
+            </div>
+          </div>
+          <div class="visual-card visual-card--stat">
+            <span class="vs-number">4.8</span>
+            <span class="vs-label">★ Community Rating</span>
+          </div>
+          <div class="visual-card visual-card--tag">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="16"><path d="M10 2a8 8 0 100 16A8 8 0 0010 2zm0 14.5a6.5 6.5 0 110-13 6.5 6.5 0 010 13zm.75-9.25H9.25v3.75l3.25 1.95.75-1.25-2.5-1.5V7.25z"/></svg>
+            Since 1987
+          </div>
+        </div>
+        <div class="community-text">
+          <span class="section-tag">Our Story</span>
+          <h2 class="section-title">More than a neighborhood. A community.</h2>
+          <p>Foxchase has been a cherished part of Fredericksburg for nearly four decades. Tucked behind a canopy of oaks and maples, our streets are lined with character homes, mature landscaping, and the kind of neighborly warmth that's hard to find.</p>
+          <p>Our Homeowners Association works to maintain property values, preserve green spaces, and organize the events and programs that bring us together — from the annual chili cook-off to the holiday light contest.</p>
+          <div class="community-pillars">
+            <div class="pillar">
+              <div class="pillar-dot"></div>
+              <div>
+                <strong>Maintained Common Areas</strong>
+                <p>HOA dues fund landscaping, trail upkeep, and facility improvements.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-dot"></div>
+              <div>
+                <strong>Active Committees</strong>
+                <p>Social, architectural, environmental, and safety committees — all volunteer-run.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-dot"></div>
+              <div>
+                <strong>Transparent Governance</strong>
+                <p>Open meetings, published budgets, and an elected board accountable to residents.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── HOA INFO STRIP ─────────────────────────────────────────── -->
+  <section class="hoa-strip">
+    <div class="container hoa-strip-inner">
+      <div class="hoa-strip-text">
+        <h3>2026 HOA Dues</h3>
+        <p>Annual dues are <strong>$480/year</strong> ($40/month), due January 15th. Payment can be made via the resident portal, check, or automatic bank draft.</p>
+      </div>
+      <div class="hoa-strip-actions">
+        <a href="#portal" class="btn btn-light">Pay Online</a>
+        <a href="#contact" class="btn btn-ghost-light">Questions? Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOARD / CONTACT ────────────────────────────────────────── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">We're Here to Help</span>
+        <h2 class="section-title">Contact the HOA</h2>
+        <p class="section-sub">Have a question, concern, or request? Reach out to your board or property management team.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Email</h3>
+          <p>hoa@foxchasehousing.com</p>
+          <p class="contact-note">Replies within 2 business days</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.18 1.2 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Phone</h3>
+          <p>(540) 555-0182</p>
+          <p class="contact-note">Mon – Fri, 9 AM – 5 PM</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Mailing Address</h3>
+          <p>Foxchase HOA<br/>P.O. Box 4471<br/>Fredericksburg, VA 22404</p>
+        </div>
+        <div class="contact-card contact-card--form">
+          <h3>Send a Message</h3>
+          <form class="contact-form" onsubmit="handleForm(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Jane Smith" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="jane@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject">
+                <option value="">Select a topic…</option>
+                <option>HOA Dues</option>
+                <option>Maintenance Request</option>
+                <option>Architectural Review</option>
+                <option>Events & Committees</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="How can we help?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-success" id="form-success" hidden>✓ Thank you! We'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 40 Q360 80 720 40 Q1080 0 1440 40 L1440 80 L0 80 Z" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo footer-logo">
+          <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18 10 C12 10 7 16 7 22 C7 26 10 29 14 30 L18 32 L22 30 C26 29 29 26 29 22 C29 16 24 10 18 10Z" fill="currentColor"/>
+            <circle cx="14" cy="21" r="1.5" fill="#1e4528"/>
+            <circle cx="22" cy="21" r="1.5" fill="#1e4528"/>
+            <path d="M15 25 Q18 27 21 25" stroke="#1e4528" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+          </svg>
+          <span class="logo-text">Foxchase</span>
+        </a>
+        <p>A neighborhood built on community, nature, and a commitment to exceptional living in Fredericksburg, Virginia.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Next Door" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15v-4H7l5-8v4h4l-5 8z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Residents</h4>
+        <ul>
+          <li><a href="#portal">Resident Portal</a></li>
+          <li><a href="#">Pay HOA Dues</a></li>
+          <li><a href="#">Submit a Request</a></li>
+          <li><a href="#">Architectural Review</a></li>
+          <li><a href="#">Move-In / Move-Out</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="#events">Events Calendar</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#">Documents & Rules</a></li>
+          <li><a href="#">Meet the Board</a></li>
+          <li><a href="#">Committees</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">CC&Rs</a></li>
+          <li><a href="#">Bylaws</a></li>
+          <li><a href="#">Meeting Minutes</a></li>
+          <li><a href="#">Annual Budget</a></li>
+          <li><a href="#contact">Contact HOA</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Foxchase Homeowners Association. All rights reserved.</p>
+        <p>Managed with ♥ in Fredericksburg, VA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

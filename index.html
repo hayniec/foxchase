@@ -256,7 +256,7 @@
                         </li>
                     </ul>
                 </div>
-                <form class="contact-form" onsubmit="return false;">
+                <form class="contact-form" id="contact-form" novalidate>
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" placeholder="John Doe" required>
@@ -274,6 +274,12 @@
                         <textarea id="message" rows="4" placeholder="Tell us more about what you're looking for&hellip;" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                    <p class="form-success" id="form-success" hidden>
+                        Thank you — we'll be in touch soon.
+                    </p>
+                    <p class="form-error" id="form-error" hidden>
+                        Please fill in all required fields.
+                    </p>
                 </form>
             </div>
         </section>

@@ -18,10 +18,13 @@
     <header class="site-header">
         <div class="container header-container">
             <a href="index.html" class="logo">
-                <span class="logo-icon">🌲</span>
-                <div>
+                <svg class="logo-mark" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M16 2C10 2 4 8 4 15C4 20 7 24.5 11.5 27L16 30L20.5 27C25 24.5 28 20 28 15C28 8 22 2 16 2Z" fill="currentColor" opacity="0.9"/>
+                    <rect x="14.5" y="29" width="3" height="5" rx="1.5" fill="currentColor" opacity="0.6"/>
+                </svg>
+                <div class="logo-text">
                     Foxchase
-                    <span class="accent">on Emerald Lake</span>
+                    <span class="logo-sub">on Emerald Lake</span>
                 </div>
             </a>
             <nav class="main-nav">
@@ -91,32 +94,32 @@
                 <div
                     style="background: white; padding: 2rem; border-radius: var(--border-radius-md); box-shadow: var(--shadow-sm);">
                     <h3><a href="https://www.aotourism.com/Shopping/Tiger-Town/" target="_blank"
-                            style="text-decoration: none; color: inherit;">Tiger Town</a></h3>
+                            rel="noopener noreferrer" style="text-decoration: none; color: inherit;">Tiger Town</a></h3>
                     <p>Alabama's largest retail center is just a short drive away. Major retailers include:</p>
                     <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
                         <li>
                             <a href="https://www.google.com/maps/search/Target+Tiger+Town+Opelika"
-                                target="_blank">Target</a>,
+                                target="_blank" rel="noopener noreferrer">Target</a>,
                             <a href="https://www.google.com/maps/search/Kroger+Tiger+Town+Opelika"
-                                target="_blank">Kroger</a>,
+                                target="_blank" rel="noopener noreferrer">Kroger</a>,
                             <a href="https://www.google.com/maps/search/Home+Depot+Tiger+Town+Opelika"
-                                target="_blank">Home Depot</a>,
+                                target="_blank" rel="noopener noreferrer">Home Depot</a>,
                             <a href="https://www.google.com/maps/search/Lowes+Tiger+Town+Opelika"
-                                target="_blank">Lowe's</a>
+                                target="_blank" rel="noopener noreferrer">Lowe's</a>
                         </li>
                         <li>
                             <a href="https://www.google.com/maps/search/Best+Buy+Tiger+Town+Opelika"
-                                target="_blank">Best Buy</a>,
+                                target="_blank" rel="noopener noreferrer">Best Buy</a>,
                             <a href="https://www.google.com/maps/search/Dicks+Sporting+Goods+Tiger+Town+Opelika"
-                                target="_blank">Dick's Sporting Goods</a>
+                                target="_blank" rel="noopener noreferrer">Dick's Sporting Goods</a>
                         </li>
                         <li>
                             <a href="https://www.google.com/maps/search/Olive+Garden+Tiger+Town+Opelika"
-                                target="_blank">Olive Garden</a>,
+                                target="_blank" rel="noopener noreferrer">Olive Garden</a>,
                             <a href="https://www.google.com/maps/search/Longhorn+Steakhouse+Tiger+Town+Opelika"
-                                target="_blank">Longhorn</a>,
+                                target="_blank" rel="noopener noreferrer">Longhorn</a>,
                             <a href="https://www.google.com/maps/search/Chicken+Salad+Chick+Tiger+Town+Opelika"
-                                target="_blank">Chicken Salad Chick</a>
+                                target="_blank" rel="noopener noreferrer">Chicken Salad Chick</a>
                         </li>
                     </ul>
                 </div>
@@ -125,12 +128,10 @@
                     <h3>Historic Downtown Opelika</h3>
                     <p>Enjoy local charm with unique boutiques, coffee shops, and restaurants like:</p>
                     <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
-                        <li><a href="https://www.zazuopelika.com/" target="_blank">Zazu Gastropub</a></li>
-                        <li><a href="https://www.redclaybrewingcompany.com/" target="_blank">Red Clay Brewing
-                                Company</a></li>
-                        <li><a href="https://www.cafeonetwentythree.com/" target="_blank">Cafe 123</a></li>
-                        <li><a href="https://www.johnemeralddistilling.com/" target="_blank">John Emerald Distilling
-                                Company</a></li>
+                        <li><a href="https://www.zazuopelika.com/" target="_blank" rel="noopener noreferrer">Zazu Gastropub</a></li>
+                        <li><a href="https://www.redclaybrewingcompany.com/" target="_blank" rel="noopener noreferrer">Red Clay Brewing Company</a></li>
+                        <li><a href="https://www.cafeonetwentythree.com/" target="_blank" rel="noopener noreferrer">Cafe 123</a></li>
+                        <li><a href="https://www.johnemeralddistilling.com/" target="_blank" rel="noopener noreferrer">John Emerald Distilling Company</a></li>
                     </ul>
                 </div>
             </div>
@@ -141,12 +142,12 @@
                 style="border-bottom: 2px solid var(--color-accent); display: inline-block; padding-bottom: 0.5rem;">🚑
                 Emergency Services</h2>
             <div class="grid-2-col" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div class="amenity-card" style="text-align: left; border-left: 4px solid #e53935;">
+                <div class="amenity-card emergency-card emergency-card--medical" style="text-align: left;">
                     <h3>East Alabama Medical Center</h3>
                     <p>2000 Pepperell Pkwy, Opelika, AL</p>
                     <p>(334) 749-3411</p>
                 </div>
-                <div class="amenity-card" style="text-align: left; border-left: 4px solid #1e88e5;">
+                <div class="amenity-card emergency-card emergency-card--police" style="text-align: left;">
                     <h3>Opelika Police Department</h3>
                     <p>501 S 10th St, Opelika, AL</p>
                     <p>Non-Emergency: (334) 705-5200</p>
@@ -156,24 +157,22 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Foxchase</h3>
-                    <p>On Emerald Lake</p>
-                </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="announcements.html">Announcements</a>
-                    <a href="emerald-lake.html">Emerald Lake</a>
-                    <a href="covenants.html">Covenants</a>
-                    <a href="new-residents.html">New Residents</a>
-                    <a href="area-info.html">Area Info</a>
-                    <!-- <a href="https://neighborhoodnet.netlify.app/">Resident Portal</a> -->
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2024 Foxchase on Emerald Lake HOA. All rights reserved.</p>
-                </div>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <p class="footer-name">Foxchase <em>on Emerald Lake</em></p>
+                <p class="footer-tagline">A private lakeside community nestled among the pines of Opelika, Alabama.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="emerald-lake.html">Emerald Lake</a>
+                <a href="covenants.html">Covenants</a>
+                <a href="new-residents.html">New Residents</a>
+                <a href="area-info.html">Area Info</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Foxchase on Emerald Lake HOA. All rights reserved.</p>
             </div>
         </div>
     </footer>

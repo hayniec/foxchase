@@ -14,6 +14,10 @@
     --gold:          #c9a96e;
     --gold-light:    #dfc08a;
 
+    /* Semantic / emergency colors */
+    --color-emergency: #c0392b;
+    --color-police:    #1a6fa8;
+
     /* Surface */
     --bg:            #fdfbf7;
     --surface:       #f0ebe6;
@@ -38,9 +42,24 @@
     --shadow-sm:  0 2px 8px rgba(36, 61, 47, 0.07);
     --shadow-md:  0 6px 24px rgba(36, 61, 47, 0.11);
     --shadow-lg:  0 18px 48px rgba(36, 61, 47, 0.15);
+    --shadow-xl:  0 28px 64px rgba(36, 61, 47, 0.2);
 
     /* Motion */
     --ease: 0.25s ease;
+
+    /* ── Legacy aliases (used by subpage inline styles) ────── */
+    --color-primary:       var(--green);
+    --color-primary-light: var(--green-light);
+    --color-secondary:     var(--brown);
+    --color-accent:        var(--gold);
+    --color-background:    var(--bg);
+    --color-surface:       var(--surface);
+    --color-surface-dim:   var(--surface-dim);
+    --color-border:        var(--border);
+    --color-text-muted:    var(--text-muted);
+    --border-radius-sm:    var(--r-sm);
+    --border-radius-md:    var(--r-md);
+    --border-radius-lg:    var(--r-lg);
 }
 
 /* ── RESET ─────────────────────────────────────────────────── */
@@ -705,11 +724,31 @@ a:hover { color: var(--brown); }
 }
 .fade-in-section.visible { opacity: 1; transform: none; }
 
-/* ── SUBPAGE HERO (used by emerald-lake.html) ──────────────── */
-.hero-section[style] { /* allow inline height override */ }
+/* ── EMERGENCY CARDS (area-info.html) ─────────────────────── */
+.emergency-card--medical { border-left: 4px solid var(--color-emergency); }
+.emergency-card--police  { border-left: 4px solid var(--color-police); }
+
+/* ── FORM FEEDBACK ─────────────────────────────────────────── */
+.form-success,
+.form-error {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--r-sm);
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+.form-success {
+    background: rgba(44, 76, 59, 0.1);
+    color: var(--green);
+    border: 1px solid rgba(44, 76, 59, 0.2);
+}
+.form-error {
+    background: rgba(192, 57, 43, 0.08);
+    color: var(--color-emergency);
+    border: 1px solid rgba(192, 57, 43, 0.2);
+}
 
 /* ── LEGACY COMPAT (used by subpages) ──────────────────────── */
-.hero-bg img { object-position: center; }
 .icon-box {
     width: 64px;
     height: 64px;

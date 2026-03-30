@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foxchase on Emerald Lake | Rustic Lakeside Living in Opelika</title>
+    <title>Foxchase on Emerald Lake | Lakeside Living in Opelika, AL</title>
     <meta name="description"
-        content="Discover Foxchase on Emerald Lake—a secluded, wooded community in Opelika, AL featuring a 60-acre private lake and craftsman homes.">
+        content="Discover Foxchase on Emerald Lake — a secluded, wooded community in Opelika, AL featuring a 60-acre private lake and craftsman homes.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Changed to Merriweather for a more "woodsy" serif and Inter for modern readability -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Inter:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
 <body>
+
+    <!-- ── HEADER ──────────────────────────────────────────── -->
     <header class="site-header">
         <div class="container header-container">
-            <a href="#" class="logo">
-                <span class="logo-icon">🌲</span>
-                <div>
+            <a href="index.html" class="logo">
+                <svg class="logo-mark" viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M16 2C10 2 4 8 4 15C4 20 7 24.5 11.5 27L16 30L20.5 27C25 24.5 28 20 28 15C28 8 22 2 16 2Z" fill="currentColor" opacity="0.9"/>
+                    <rect x="14.5" y="29" width="3" height="5" rx="1.5" fill="currentColor" opacity="0.6"/>
+                </svg>
+                <div class="logo-text">
                     Foxchase
-                    <span class="accent">on Emerald Lake</span>
+                    <span class="logo-sub">on Emerald Lake</span>
                 </div>
             </a>
             <nav class="main-nav">
@@ -39,51 +41,73 @@
                     <li><a href="covenants.html">Covenants</a></li>
                     <li><a href="new-residents.html">New Residents</a></li>
                     <li><a href="area-info.html">Area Information</a></li>
-                    <!-- <li><a href="https://neighborhoodnet.netlify.app/" class="btn btn-primary"
-                            id="resident-portal-link">Resident Portal</a></li> -->
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="home" class="hero-section">
+
+        <!-- ── HERO ────────────────────────────────────────── -->
+        <section class="hero-section">
             <div class="hero-bg">
-                <!-- Unsplash Placeholder: Forest/Lake view -->
                 <img src="images/frontentrance3.jpg" alt="Foxchase Front Entrance" loading="eager">
             </div>
             <div class="hero-overlay"></div>
             <div class="container hero-content">
-                <h1 class="fade-in-up">Opelika's Premier Lakeside Community</h1>
-                <p class="fade-in-up delay-1">Discover Foxchase on Emerald Lake—a secluded, wooded community featuring a
-                    60-acre private lake and craftsman homes.</p>
+                <span class="hero-eyebrow">Opelika, Alabama</span>
+                <h1 class="fade-in-up">Where the Lake<br>Is Your Backyard</h1>
+                <p class="fade-in-up delay-1">A secluded, wooded community built around the pristine 60-acre Emerald Lake — just minutes from downtown Opelika and Auburn University.</p>
                 <div class="hero-actions fade-in-up delay-2">
-                    <a href="#about" class="btn btn-outline">Explore the Lifestyle</a>
+                    <a href="#about" class="btn btn-outline">Explore the Community</a>
                     <a href="https://www.realtor.com/realestateandhomes-search/Opelika_AL/keyword-Foxchase"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Current Listings</a>
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Listings</a>
                 </div>
+            </div>
+            <div class="hero-scroll-hint" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
             </div>
         </section>
 
+        <!-- ── STAT STRIP ───────────────────────────────────── -->
+        <div class="stat-strip">
+            <div class="container stat-strip-inner">
+                <div class="stat-item">
+                    <span class="stat-num">60</span>
+                    <span class="stat-label">Acre Private Lake</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">Private</span>
+                    <span class="stat-label">Gated Community</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num">~15 min</span>
+                    <span class="stat-label">to Auburn University</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── ABOUT ────────────────────────────────────────── -->
         <section id="about" class="section about-section">
             <div class="container grid-2-col">
                 <div class="content-block">
                     <span class="overline">The Community</span>
                     <h2>Where Nature Meets Neighborhood</h2>
-                    <p>Hidden amidst towering pines and hardwoods, Foxchase feels worlds away, yet is just minutes from
-                        downtown Opelika and Auburn University.</p>
-                    <p>At the heart of our community lies the pristine 60-acre Emerald Lake. Whether you're casting a
-                        line at dawn, paddling through the mist, or simply enjoying the view from your porch, life here
-                        moves at a gentler pace.</p>
-                    <a href="#amenities" class="btn btn-secondary">See Our Amenities</a>
+                    <p>Hidden amidst towering pines and hardwoods, Foxchase feels worlds away, yet is just minutes from downtown Opelika and Auburn University.</p>
+                    <p>At the heart of our community lies the pristine 60-acre Emerald Lake. Whether you're casting a line at dawn, paddling through the morning mist, or simply enjoying the view from your porch, life here moves at a gentler pace.</p>
+                    <a href="emerald-lake.html" class="btn btn-secondary">Discover Emerald Lake</a>
                 </div>
                 <div class="image-block">
-                    <!-- Unsplash Placeholder: Wooded Path/Cabin vibe -->
-                    <img src="images/frontentrance3.jpg" alt="Foxchase Front Entrance">
+                    <img src="images/fishingonthelake.jpg" alt="Fishing on Emerald Lake">
                 </div>
             </div>
         </section>
 
+        <!-- ── AMENITIES ─────────────────────────────────────── -->
         <section id="amenities" class="section amenities-section">
             <div class="container">
                 <div class="section-header text-center">
@@ -91,115 +115,173 @@
                     <h2>Designed for the Outdoors</h2>
                     <p>Our amenities are built to help you reconnect with nature and your neighbors.</p>
                 </div>
-
                 <div class="amenities-grid">
+
                     <div class="amenity-card">
-                        <div class="icon-box">�</div>
+                        <div class="amenity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M2 17c1.5-2.5 3-2.5 4.5 0S10 19.5 11.5 17 14 14.5 15.5 17s3 2.5 4.5 0"/>
+                                <path d="M7 17V9l4-4 1 3 3-1-1 4h3"/>
+                                <circle cx="17" cy="8" r="1" fill="currentColor" stroke="none"/>
+                            </svg>
+                        </div>
                         <h3>Private Fishing Lake</h3>
-                        <p>A well-stocked 60-acre lake exclusively for residents. Bass, bream, and peaceful mornings
-                            guaranteed.</p>
-                    </div>
-                    <div class="amenity-card">
-                        <div class="icon-box">🛶</div>
-                        <h3>Boating & Kayaking</h3>
-                        <p>Launch your canoe or electric boat from the community dock or your own backyard.</p>
+                        <p>A well-stocked 60-acre lake exclusively for residents. Bass, bream, and peaceful mornings guaranteed.</p>
                     </div>
 
                     <div class="amenity-card">
-                        <div class="icon-box">🎾</div>
-                        <h3>Tennis & Park</h3>
-                        <p>Active living with private tennis courts and a gathered green space for community events.</p>
+                        <div class="amenity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 17h18M5 17l2-7h10l2 7"/>
+                                <path d="M9 10V7M12 10V5M15 10V7"/>
+                                <path d="M2 20c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/>
+                            </svg>
+                        </div>
+                        <h3>Boating &amp; Kayaking</h3>
+                        <p>Launch your canoe, kayak, or approved boat from the community dock or your own backyard.</p>
                     </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M5.4 5.4c2 2 2 9.2 0 13.2M18.6 5.4c-2 2-2 9.2 0 13.2"/>
+                                <path d="M3 12h18"/>
+                            </svg>
+                        </div>
+                        <h3>Tennis &amp; Recreation</h3>
+                        <p>Active living with private tennis courts and open green space for community gatherings.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 9.5L12 3l9 6.5V21a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z"/>
+                                <path d="M9 22V12h6v10"/>
+                            </svg>
+                        </div>
+                        <h3>Craftsman Homes</h3>
+                        <p>Architectural standards ensure every home complements the natural beauty of the surrounding land.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 2L8 8h2L7 14h4v7h2v-7h4l-3-6h2L12 2z"/>
+                                <path d="M5 22h14"/>
+                            </svg>
+                        </div>
+                        <h3>Wooded Setting</h3>
+                        <p>Mature pines and hardwoods provide shade, privacy, and a connection to the natural landscape.</p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22s-8-5.5-8-12a8 8 0 0116 0c0 6.5-8 12-8 12z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Prime Location</h3>
+                        <p>Minutes from Tiger Town shopping, top-rated schools, and the energy of Auburn University.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
+        <!-- ── LAKE HIGHLIGHT ────────────────────────────────── -->
+        <section id="lake" class="section">
+            <div class="container grid-2-col">
+                <div class="image-block">
+                    <img src="images/emeraldlakedock.png" alt="Emerald Lake Dock">
+                </div>
+                <div class="content-block">
+                    <span class="overline">Emerald Lake</span>
+                    <h2>The Jewel of Our Community</h2>
+                    <p>Emerald Lake is a private, 60-acre lake managed exclusively for Foxchase residents. It serves as the stunning centerpiece of our neighborhood, providing year-round beauty and recreation.</p>
+                    <p>From sunrise fishing to summer skiing, the lake is the heartbeat of life in Foxchase.</p>
+                    <a href="emerald-lake.html" class="btn btn-secondary">Lake Rules &amp; Details</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── LISTINGS CTA ──────────────────────────────────── -->
         <section id="homes" class="section highlight-section">
             <div class="container">
                 <div class="highlight-content text-center">
+                    <span class="overline overline-light">Real Estate</span>
                     <h2>Build Your Retreat</h2>
-                    <p>Choose from expansive wooded interior lots or premium waterfront homesites. Our architectural
-                        standards ensure every home complements the natural beauty of the land.</p>
-
-                    <br>
-                    <a href="https://www.realtor.com/realestateandhomes-search/Opelika_AL/keyword-Foxchase"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-outline margin-top-md">View Listings on
-                        Realtor.com</a>
+                    <p>Choose from expansive wooded interior lots or premium waterfront homesites on Emerald Lake. Our architectural standards ensure every home complements the natural beauty of the land.</p>
+                    <div class="cta-actions">
+                        <a href="https://www.realtor.com/realestateandhomes-search/Opelika_AL/keyword-Foxchase"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Listings on Realtor.com</a>
+                        <a href="new-residents.html" class="btn btn-light">New Residents Guide</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- ── CONTACT ───────────────────────────────────────── -->
         <section id="contact" class="section contact-section">
             <div class="container grid-2-col">
                 <div class="contact-info">
                     <span class="overline">Get in Touch</span>
                     <h2>Come See the Lake</h2>
-                    <p>We invite you to experience Foxchase firsthand. Contact us for HOA questions or community
-                        information.</p>
-
+                    <p>We invite you to experience Foxchase firsthand. Contact us for HOA questions, community information, or to learn about available homesites.</p>
                     <ul class="contact-list">
                         <li>
-                            <span class="contact-icon">📍</span>
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 22s-8-5.5-8-12a8 8 0 0116 0c0 6.5-8 12-8 12z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </span>
                             <div>
                                 <strong>Address</strong><br>
                                 Marvyn Parkway, Opelika, AL 36804
                             </div>
                         </li>
                         <li>
-                            <span class="contact-icon">📧</span>
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </span>
                             <div>
                                 <strong>Email</strong><br>
-                                welcome@foxchaseonemeraldlake.com
+                                drb@foxchaseonemeraldlake.com
                             </div>
                         </li>
                     </ul>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="interest">I'm interested in...</label>
-                        <input type="text" id="interest" placeholder="e.g. Lakefront lots, Home tour">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" rows="4" placeholder="Tell us more about what you're looking for..."
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
-                </form>
             </div>
         </section>
+
     </main>
 
+    <!-- ── FOOTER ────────────────────────────────────────────── -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Foxchase</h3>
-                    <p>On Emerald Lake</p>
-                </div>
-                <div class="footer-links">
-                    <a href="index.html">Home</a>
-                    <a href="announcements.html">Announcements</a>
-                    <a href="emerald-lake.html">Emerald Lake</a>
-                    <a href="covenants.html">Covenants</a>
-                    <a href="new-residents.html">New Residents</a>
-                    <a href="area-info.html">Area Info</a>
-                    <!-- <a href="https://neighborhoodnet.netlify.app/">Resident Portal</a> -->
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2024 Foxchase on Emerald Lake HOA. All rights reserved.</p>
-                </div>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <p class="footer-name">Foxchase <em>on Emerald Lake</em></p>
+                <p class="footer-tagline">A private lakeside community nestled among the pines of Opelika, Alabama.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <a href="emerald-lake.html">Emerald Lake</a>
+                <a href="covenants.html">Covenants</a>
+                <a href="new-residents.html">New Residents</a>
+                <a href="area-info.html">Area Info</a>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Foxchase on Emerald Lake HOA. All rights reserved.</p>
             </div>
         </div>
     </footer>
-</body>
 
+</body>
 </html>
